@@ -1,0 +1,114 @@
+Scanner scanner=new Scanner(System.in);
+int n=scanner.nextInt()
+
+
+自动导包  ctrl+shift+o
+
+多行注释快捷方式  ctrl+shift+/
+
+Ctrl+d 删除一行
+
+提示：Alt+/ syso 
+
+查看详细 ctrl +鼠标点击
+
+上下移动行 Alt+键盘的方向键
+
+Main 方法快捷方式 main+alt+/+enter
+
+生成 get set 方法的快捷方式：alt+shift+s
+
+打开一个类的所有方法和数据的快捷方式：ctrl+o
+
+Ctrl+t 查看接口的实现类
+
+alt+shift+r：重命名
+
+ctrl+.及ctrl+1：下一个错误及快速修改
+
+Shift+enter在当前行之下创建一个空白行，与光标是否在行末无关。Ctrl+shift+enter则在当前行之前插入空白行。
+
+
+
+
+int speak(String name,int age,String ...hobbies)	不固定参数
+
+
+Outer2.Inner inner=outer2.new Inner();  // 实例化内部类对象
+
+
+/**
+* 构造块
+*/
+	{
+		System.out.println("通用 构造块！");
+	}
+
+
+“==”，比较的是引用 “equals 方法”比较的是具体内容
+
+1，直接赋值方式，创建的对象存放到字符串对象池里，假如存在的，就不会再创建； 2，new 对象方式，每次都创建一个新的对象；
+
+1，char charAt(int index) 返回指定索引处的 char 值。
+2，intlength() 返回此字符串的长度。
+3，intindexOf() 返回指定字符在此字符串中第一次出现处的索引。
+4，Stringsubstring(intbeginIndex) 返回一个新的字符串，它是此字符串的一个子字符
+串。该子字符串从指定索引处的字符开始，直到此字符串末尾。
+5，StringtoUpperCase() 使用默认语言环境的规则将此 String 中的所有字符都转换
+为大写。
+
+dog instanceof Animal
+
+
+Integer i=new Integer(a);  // 装箱 把基本变量变成对象变量
+int b=i.intValue(); // 拆箱  把对象变量变成基本变量
+
+
+Integer i=1;  // 自动装箱的过程   自动把基本数据转换成对象
+int i2=i;  // 自动拆箱  自动把对象转换成基本数据
+
+
+String a="1";
+String b="2";
+int m=Integer.parseInt(a);
+int n=Integer.parseInt(b);
+
+public static String formatDate(Date date,String format){
+		String result="";
+		SimpleDateFormat sdf=new SimpleDateFormat(format);
+		if(date!=null){
+			result=sdf.format(date);
+		}
+		return result;
+}
+
+
+public static Date formatDate(String dataStr,String format) throws ParseException{
+		SimpleDateFormat sdf=new SimpleDateFormat(format);
+		return sdf.parse(dataStr);
+}
+	
+
+public static void main(String[] args) {
+		Calendar calendar=Calendar.getInstance();
+		System.out.println(calendar.get(Calendar.YEAR));
+		System.out.println(calendar.get(Calendar.MONTH)+1);
+		
+		System.out.println("现在是："+calendar.get(Calendar.YEAR)+"年"
+				+(calendar.get(Calendar.MONTH)+1)+"月"
+				+calendar.get(Calendar.DAY_OF_MONTH)+"日"
+				+calendar.get(Calendar.HOUR_OF_DAY)+"时"
+				+calendar.get(Calendar.MINUTE)+"分"
+				+calendar.get(Calendar.SECOND)+"秒");
+}
+
+
+
+
+
+
+shift+g		Vim中定位到最后面
+Alt+p		打开传输通道
+连按两下g	Vim中定位到前面
+
+
